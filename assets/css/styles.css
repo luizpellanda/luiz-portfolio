@@ -7,7 +7,7 @@
 
 :root {
     --primary-color: hsl(234, 35%, 32%);
-    --secondary-color: #5ebac5;
+    --secondary-color: #605ad2;
     --tertiary-color: #384344;
   }
 
@@ -33,14 +33,15 @@ header h1 {
     font-weight: lighter;
     font-size: 36px;
     color: var(--tertiary-color);
-    background-color: var(--secondary-color);
+    background-color: white;
     margin: 0;
     text-decoration: none;
     padding: 0 0 0 60px;
     
 }
+
 header a {
-    color: var(--secondary-color);
+    color: white;
     text-decoration: none;
 }
 
@@ -60,6 +61,17 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: white;
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+header a:hover{
+    background: blue;
 }
 
 /* hero starts */
@@ -90,15 +102,14 @@ header nav ul li a {
 .about-me {
     display: flex;
     justify-content: space-around;
-    border-top: 70px;
+    padding: 50px;
 }
 
-.title-body h2 {
+.about-me h2 {
     font-size: 76px;
     width: 300px;
     text-align: right;
     padding: 15px;
-   
 }
 
 .about-me p {
@@ -106,5 +117,61 @@ header nav ul li a {
     padding: 35px 10px 10px 30px;
     text-align: justify;
     border-top: 30px;
+    line-height: 1.5;
   
 }
+
+.work {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.work h2 {
+    font-size: 76px;
+    width: 300px;
+    text-align: right;
+    padding: 15px;
+}
+
+.main-project {
+
+}
+
+.main-project img {
+    width: 700px;
+}
+
+.secondary-projects {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.secondary-projects img {
+    width: 350px;
+    height: 350px;
+    display: flex;
+}
+
+.facebook .warcraft .youtube .nasa {
+    flex: 1;
+}
+
+/* contact starts */
+
+.contact h2 {
+    font-size: 76px;
+    width: 300px;
+    text-align: right;
+    padding: 15px;
+}
+
+.about-me p {
+    border-left: 3px solid var(--secondary-color);
+    padding: 35px 10px 10px 30px;
+    text-align: justify;
+    border-top: 30px;
+    line-height: 1.5;
+    }
+
+
