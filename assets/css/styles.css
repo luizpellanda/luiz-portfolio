@@ -1,0 +1,110 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: hsl(234, 35%, 32%);
+    --secondary-color: #5ebac5;
+    --tertiary-color: #384344;
+  }
+
+/* header starts */
+
+header {
+    padding: 20px 0;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: lighter;
+    font-size: 36px;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    text-decoration: none;
+    padding: 0 0 0 60px;
+    
+}
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header nav {  
+    margin: 7px 0;
+}
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/* hero starts */
+
+.hero {
+    background-image: url("../images/hero-background.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-position: 80%;
+    height: 280px;
+}
+
+.hero h3 {
+    background-color: var(--tertiary-color);
+    color: white;
+    margin: 0 100px 15px 0;
+    font-size: 30px;
+}
+
+/* hero ends */
+
+/* body starts */
+
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    border-top: 70px;
+}
+
+.title-body h2 {
+    font-size: 76px;
+    width: 300px;
+    text-align: right;
+    padding: 15px;
+   
+}
+
+.about-me p {
+    border-left: 3px solid var(--secondary-color);
+    padding: 35px 10px 10px 30px;
+    text-align: justify;
+    border-top: 30px;
+  
+}
