@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: sans-serif; 
+ }
+
+ a, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 :root {
@@ -29,7 +34,7 @@ header {
     z-index: 9999;
 }
 
-header h1 {
+header h1 a {
     font-weight: lighter;
     font-size: 36px;
     color: var(--tertiary-color);
@@ -37,7 +42,6 @@ header h1 {
     margin: 0;
     text-decoration: none;
     padding: 0 0 0 60px;
-    
 }
 
 header a {
@@ -49,7 +53,7 @@ header nav {
     margin: 7px 0;
 }
   
-  header nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -70,9 +74,7 @@ header nav ul li a:hover {
     text-shadow: none;
   }
 
-header a:hover{
-    background: blue;
-}
+/* header ends */
 
 /* hero starts */
 
@@ -97,7 +99,7 @@ header a:hover{
 
 /* hero ends */
 
-/* body starts */
+/* about me starts */
 
 .about-me {
     display: flex;
@@ -113,18 +115,28 @@ header a:hover{
 }
 
 .about-me p {
-    border-left: 3px solid var(--secondary-color);
+    border-left: 3px solid var(--tertiary-color);
     padding: 35px 10px 10px 30px;
     text-align: justify;
     border-top: 30px;
     line-height: 1.5;
   
 }
+/* about me ends */
+
+/* work starts */
 
 .work {
     display: flex;
-    padding: 50px;
     flex-wrap: wrap;
+}
+
+.work img {
+    opacity: 0.75;
+}
+
+.work img:hover {
+    opacity: 1;
 }
 
 .work h2 {
@@ -134,44 +146,47 @@ header a:hover{
     padding: 15px;
 }
 
-.main-project {
-
-}
-
-.main-project img {
-    width: 700px;
-}
-
-.secondary-projects {
+.images {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 10px 10px 10px 10px;
+    opacity: 75%;
 }
 
-.secondary-projects img {
-    width: 350px;
-    height: 350px;
-    display: flex;
-}
-
-.facebook .warcraft .youtube .nasa {
-    flex: 1;
-}
+/* work ends */
 
 /* contact starts */
 
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 .contact h2 {
     font-size: 76px;
     width: 300px;
     text-align: right;
     padding: 15px;
+    margin: 70px;
+    border-right: 3px solid var(--tertiary-color);
 }
 
-.about-me p {
-    border-left: 3px solid var(--secondary-color);
-    padding: 35px 10px 10px 30px;
-    text-align: justify;
-    border-top: 30px;
-    line-height: 1.5;
-    }
+.contact ul li {
+    list-style: none;
+    display: inline;
+    
+}
 
+.contact ul li a {
+    text-decoration: none;
+    padding: 50px;
+    font-size: 30px;
+}
+ 
+.contact-list {
+    margin: 0 auto;
+}
 
+/* contact ends */
